@@ -80,13 +80,6 @@ patient = [[63, 1, 3, 145, 233, 1, 0, 150, 0, 2.3, 0, 0, 1]]
 prediction = model.predict(patient)
 probability = model.predict_proba(patient)
 
-if prediction[0] == 1:
-
-    print(f"⚠️ High risk ({probability[0][1]:.2%} probability)")
-    
-else:
-    print(f"✅ Low risk ({probability[0][0]:.2%} probability)")
-
 📈 Results Visualization
 The project includes:
 
