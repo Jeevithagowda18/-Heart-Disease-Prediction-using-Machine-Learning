@@ -81,7 +81,9 @@ prediction = model.predict(patient)
 probability = model.predict_proba(patient)
 
 if prediction[0] == 1:
+
     print(f"⚠️ High risk ({probability[0][1]:.2%} probability)")
+    
 else:
     print(f"✅ Low risk ({probability[0][0]:.2%} probability)")
 
